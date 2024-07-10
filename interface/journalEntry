@@ -1,0 +1,10 @@
+from abc import ABC, abstractmethod
+class journalEntry(ABC):
+
+    @abstractmethod
+    def updateEntry(self, num1, num2):
+        pass
+
+    @abstractmethod
+    def updateDate(self, result):
+        pass
