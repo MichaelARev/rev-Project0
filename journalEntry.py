@@ -11,5 +11,8 @@ class JournalEntry():
     def updateDate(self, entryDate):
         self.today = entryDate
 
+    def __eq__(self, other):
+        return self.entryDate == other.entryDate
 
-        
+    def __lt__(self, other):
+        return self.entryDate < other.entryDate
